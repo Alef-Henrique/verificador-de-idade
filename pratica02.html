@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="pratica02.css">
+    
+</head>
+<body>
+    <h1>Verificador de idade</h1>
+    <section class="container_principal">
+
+    <div class="container_texto">
+
+            <label for="data">Data de Nascimento:</label>
+            <div class="container_data">
+                <input type="number" id="textdia" placeholder="Dia" max="31" min="1">
+                <input type="number" id="textmes" placeholder="Mês" max="12" min="1">
+                <input type="number" id="textano" placeholder="Ano" max="2100" min="1900">
+
+            </div>
+
+            <label>Sexo:</label>
+
+                <div class="container_genero">
+
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino">Feminino</label>
+
+                </div>
+
+            <input class="botao" type="button" value="verificar" onclick="verificar()">
+
+            <div id="msg">
+                <p>Preencha os dados acima!</p>
+
+            </div>
+
+    </div>
+
+    </section>
+
+    <script src="pratica02.js"></script>
+    
+</body>
+</html>

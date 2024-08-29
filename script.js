@@ -8,12 +8,16 @@ function verificar() {
     var fmes = document.getElementById('textmes')
     var fano = document.getElementById('textano')
     var msg = document.getElementById('msg')
-
+    
     if (fano.value <= 0 || fano.value > anoAtual || fmes.value <= 0 || fmes.value > 12 || fdia.value <= 0 || fdia.value > 31) {
         alert('Verifique os dados e tente novamente!')
     } else {
         var fsex = document.getElementsByName('sexo')
         var idade = anoAtual - Number(fano.value)
+
+        if (!fsex[0].checked && !fsex[1].checked) {
+            alert('Por favor, selecione o sexo antes de continuar!')
+        }
 
      
         if (mesAtual < Number(fmes.value) || (mesAtual === Number(fmes.value) && diaAtual < Number(fdia.value))) {

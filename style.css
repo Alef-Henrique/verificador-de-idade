@@ -9,7 +9,7 @@ h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     text-shadow: 3px 3px 2px rgb(0, 0, 0, 0.7);
-    margin-top: 2em;
+    margin-top: 1em;
 }
 .container_data{
     display: flex;
@@ -63,4 +63,31 @@ label{
     background-color:antiquewhite;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
+}
+@media (max-width: 457px ) {
+    .container_data input{
+        width: 50px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 2em;
+    }
+    label{
+        font-size: 1em;
+    }
+    .container_genero{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 5px;
+        align-items: center;
+        
+    }
+    input[type="radio"]{
+        width:8px; 
+        height:8px;
+        transform: scale(1.4); 
+    }
+
 }
